@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="item"
+            type="com.news.revbel.viewmodel.FileViewModel" />
+        <variable
+            name="listener"
+            type="com.news.revbel.filelist.FilesListener" />
+        <import type="android.view.View" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/recycleBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:onClick="@{(v) -> listener.onBookClick(v, item)}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/container">
+
+            <com.news.revbel.utilities.AspectRatioImageView
+                android:id="@+id/fileImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/downloadButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="false"
+                        android:background="@color/white"
+                        android:cropToPadding="false"
+                        android:visibility="@{item.isDownloading ? View.INVISIBLE : View.VISIBLE}"
+                        android:contentDescription="@null"
+                        android:src="@{item.isDownloaded ?  @drawable/open_book : @drawable/download_book}" />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/progressing"
+                        style="@style/AVLoadingIndicatorView.Small"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:visibility="@{!item.isDownloading ? View.INVISIBLE : View.VISIBLE}"
+                        app:indicatorColor="@android:color/black"
+                        app:indicatorName="LineSpinFadeLoaderIndicator" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    tools:text="Title for text " />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:maxHeight="5dip"
+                android:minHeight="5dip"
+                android:paddingTop="5dp"
+                android:progress='@{item.progress}'
+                android:progressDrawable="@drawable/book_progress" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

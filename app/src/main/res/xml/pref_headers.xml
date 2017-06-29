@@ -1,0 +1,12 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.news.revbel.preferences.SettingsActivity$NetworkPreferenceFragment"
+        android:title="@string/pref_header_network" />
+    <header
+        android:fragment="com.news.revbel.preferences.SettingsActivity$OpenFilePreferenceFragment"
+        android:title="@string/pref_open_files"/>
+    <header
+        android:fragment="com.news.revbel.preferences.SettingsActivity$DataManagePreferenceFragment"
+        android:title="@string/pref_data_title"/>
+</preference-headers>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/nav_home"
+			android:title="@string/nav_title_main"
+			android:icon="@drawable/ic_home_nav"/>
+		<item
+			android:id="@+id/nav_favorite"
+			android:title="@string/nav_title_favorite"
+			android:icon="@drawable/ic_favorite_nav"/>
+		<item
+			android:id="@+id/nav_bandaluki"
+			android:title="@string/nav_title_bandaluki"
+			android:icon="@drawable/ic_bandaluki_nav"/>
+		<item
+			android:id="@+id/nav_library"
+			android:title="@string/nav_title_library"
+			android:icon="@drawable/ic_library_nav"/>
+		<item
+			android:id="@+id/nav_agitation"
+			android:title="@string/nav_title_agitation"
+			android:icon="@drawable/ic_agitation_nav"/>
+		<item
+			android:id="@+id/nav_postnews"
+			android:title="@string/nav_title_postnews"
+			android:icon="@drawable/ic_mail_nav"/>
+		<item
+			android:id="@+id/nav_donate"
+			android:title="@string/nav_title_donate"
+			android:icon="@drawable/ic_support_nav"/>
+	</group>
+
+	<group android:checkableBehavior="none">
+		<item
+			android:id="@+id/nav_settings"
+			android:title="@string/nav_title_settings"
+			android:icon="@drawable/ic_settings_nav"/>
+	</group>
+
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/nav_about_us"
+			android:title="@string/nav_title_about_us"
+			android:icon="@drawable/ic_about_nav"/>
+	</group>
+</menu>

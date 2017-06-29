@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.news.revbel.feedback.PostNewsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/sendpost_title"
+                android:inputType="textEmailSubject"
+                android:maxLines="1"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/upload_button"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/upload_file" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/attachments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:layout="@layout/content_image_gallery" />
+
+        <fragment
+            android:id="@+id/rich_edit"
+            android:name="com.news.revbel.feedback.RichEditorFragment"
+            class="com.news.revbel.feedback.RichEditorFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/content_rich_editor" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:text="@string/sendpost_send"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

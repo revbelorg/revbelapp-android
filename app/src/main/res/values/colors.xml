@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_halftransparent">#A0FFFFFF</color>
+    <color name="green">#006633</color>
+    <color name="red">#d20000</color>
+    <color name="teal">#008080</color>
+    <color name="recycleBackground">#EDEEEF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

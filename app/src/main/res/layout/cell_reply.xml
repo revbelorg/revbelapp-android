@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="item"
+            type="com.news.revbel.viewmodel.ReplyModel" />
+        <import type="com.news.revbel.utilities.Utilities"/>
+        <import type="android.text.Html"/>
+    </data>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text="@{Utilities.dateToString(item.date)}"
+            tools:text="date"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:text="@{item.authorName}"
+                tools:text="Test name author"
+                android:layout_weight="1.21" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textSize="14sp"
+            android:textAppearance="@style/Toolbar.TitleText"
+            android:text="@{Html.fromHtml(item.textContent)}"
+            tools:text="Test content of the comment" />
+
+    </LinearLayout>
+</layout>

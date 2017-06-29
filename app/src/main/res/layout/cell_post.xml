@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="item"
+            type="com.news.revbel.viewmodel.PostModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/post_container">
+
+            <com.news.revbel.utilities.AspectRatioImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription=""
+                android:paddingLeft="-1dp"
+                android:paddingRight="-1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Big title for my blog"
+                    android:textSize="24sp"
+                    fontPath="fonts/Furore.ttf"/>
+
+                <TextView
+                    android:id="@+id/post_excerpt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    tools:text="Test excerpt for my bigest blog app in the world!"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:text="@string/read_more"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/read_more_title"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        app:srcCompat="@drawable/read_more_button"
+                        android:id="@+id/readmore_button"
+                        android:background="@color/white"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:contentDescription="@null"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backgroundView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="-10dp"
+            app:srcCompat="@drawable/favorite_background"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="-10dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/favorite_selector"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress_bar"
+            style="@style/AVLoadingIndicatorView.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="7dp"
+            android:visibility="invisible"
+            app:indicatorColor="@android:color/black"
+            app:indicatorName="LineSpinFadeLoaderIndicator" />
+    </android.support.v7.widget.CardView>
+</layout>

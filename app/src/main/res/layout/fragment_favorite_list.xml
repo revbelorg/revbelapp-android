@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="postListViewModel"
+            type="com.news.revbel.viewmodel.FavoriteListViewModel" />
+
+        <variable
+            name="listeners"
+            type="com.news.revbel.postlist.PostListListeners" />
+
+        <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers" />
+        <import type="me.tatarka.bindingcollectionadapter2.ItemBinding" />
+        <import type="com.news.revbel.utilities.ViewUtilities"/>
+        <import type="android.view.View" />
+        <import type="com.news.revbel.viewmodel.FavoriteListViewModel"/>
+    </data>
+    <RelativeLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_posts_container"
+        android:background="@color/recycleBackground">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeContainer">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_list"
+                android:name="com.news.revbel.postlist.PostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="6dp"
+                android:clipToPadding="false"
+                android:background="@color/recycleBackground"
+                app:adapter='@{postListViewModel.adapter}'
+                app:itemBinding='@{postListViewModel.singleItemView}'
+                app:items="@{postListViewModel.items}"
+                app:layoutManager="@{@bool/isTablet &amp;&amp; postListViewModel.hasOpenedDetails == false ? ViewUtilities.staggeredGrid(3, 1) : LayoutManagers.linear()}"
+                tools:context="com.news.revbel.postlist.PostListFragment"
+                tools:listitem="@layout/cell_post" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/nothing_label"
+            fontPath="fonts/Furore.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/has_nothing_to_show"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</layout>
+
+

@@ -1,0 +1,19 @@
+@font-face { font-family: 'Scada'; src: url('fonts/Scada-Regular.ttf') }
+body { font-family: 'Scada'; margin-left: 6%; margin-right: 6% }
+p { text-align: justify }
+div { text-align: justify }
+h3 { text-align: justify }
+h4 { text-align: justify } 
+h5 { text-align: justify }
+blockquote { margin-left: 2%; margin-right: 2% }
+a { color:#000000; font-weight: bold; text-decoration: underline }
+div > img {
+  width: auto;
+  height : auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.bottom-margin {
+     margin-bottom: 60px;
+  }

@@ -1,0 +1,218 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.news.revbel.feedback.PostPollActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/description_1"
+                    fontPath="fonts/Furore.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/sendpoll_desription_1"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <CheckedTextView
+                    android:id="@+id/description_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:checkMark="@drawable/expand_poll"
+                    android:text="@string/sendpoll_desription_2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/description_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="web|email"
+                    android:text="@string/sendpoll_desription_3"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/sendpoll_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/sendpoll_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/edit_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/sendpoll_age"
+                    android:inputType="numberSigned"
+                    android:maxLines="1"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/edit_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/sendpoll_city"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/edit_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/sendpoll_work"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/edit_anarchism"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_anarchism"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_motivation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_motivation"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_police"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_police"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_theory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_theory"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_anarchism_opinion"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_needs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_needs"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_participate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_participate"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_rev_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/sendpoll_opinion"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_revbelorg"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    fontPath="fonts/Furore.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/sendpoll_manifestcheckmark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/send_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:text="@string/sendpost_send"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/thumb_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom">
+            <LinearLayout
+                android:id="@+id/thumbnails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="2dp" />
+        </HorizontalScrollView>
+
+        <com.news.revbel.utilities.WrapContentHeightViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp">
+        </com.news.revbel.utilities.WrapContentHeightViewPager>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.news.revbel.preferences.ClearDataDialog
+        android:key="CLEAR_DATA"
+        android:dialogIcon="@android:drawable/ic_dialog_alert"
+        android:title="@string/pref_clear_data"
+        android:summary="@string/pref_clear_summary"
+        android:dialogMessage="@string/pref_clear_message"
+        android:positiveButtonText="@string/pref_clear_data_ok"
+        android:negativeButtonText="@string/pref_clear_data_cancel" />
+</PreferenceScreen>

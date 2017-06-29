@@ -1,0 +1,208 @@
+<resources>
+    <string name="album_name_all">Все медиа</string>
+
+    <string name="button_preview">Предпросмотр</string>
+    <string name="button_apply_disable">Применить</string>
+    <string name="button_apply">Применить(%1$d)</string>
+    <string name="button_back">Назад</string>
+    <string name="photo_grid_capture">Камера</string>
+    <string name="empty_text">Нет медиа</string>
+    <string name="button_ok">ОК</string>
+
+    <string name="error_over_count_default">Вы не можете выбрать больше</string>
+    <string name="error_over_count">Вы можете выбрать только %1$d медиа файлов</string>
+    <string name="error_under_quality">Качеством ниже</string>
+    <string name="error_over_quality">Качеством выше</string>
+    <string name="error_file_type">Неподдерживаемый вид файла</string>
+    <string name="error_type_conflict">Нельзя выбирать фотографии и видео в один момент</string>
+    <string name="error_no_video_activity">Нет приложения, поддерживающего предпросмотр</string>
+
+    <string name="browse_intent_name">Открыть сайт Революционного Действия в приложении</string>
+    <string name="app_name">Р.Д.</string>
+    <string name="app_icon_name">revbel.org</string>
+
+    <string name="nav_desciption">Анархисты Беларуси.</string>
+
+    <string name="nav_title_main">Главная</string>
+    <string name="nav_title_favorite">Избранное</string>
+    <string name="nav_title_bandaluki">Банда Луки</string>
+    <string name="nav_title_library">Библиотека</string>
+    <string name="nav_title_agitation">Агитация</string>
+    <string name="nav_title_donate">Поддержать</string>
+    <string name="nav_title_postnews">Сообщить</string>
+    <string name="nav_title_settings">Настройки</string>
+    <string name="nav_title_other">Информация</string>
+    <string name="nav_title_about_us">О нас</string>
+    <string name="nav_title_recommendations">Рекоммендации</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="action_settings">Настройки.</string>
+
+    <string name="title_post_detail">Статья</string>
+    <string name="read_more">Читать далее:</string>
+    <string name="load_more">Загрузить еще…</string>
+    <string name="comments_section">Комментарии</string>
+    <string name="title_activity_pdfview">Library File</string>
+    
+    <string name="bandaluki_city_unknown">Неизвестно</string>
+
+    <string name="menu_share">Поделиться</string>
+
+    <string name="full_post_name">Ваше имя</string>
+    <string name="full_post_email">Email</string>
+    <string name="full_post_text">Текст</string>
+    <string name="full_post_answer">Ответить</string>
+    <string name="full_post_answering_title">Отправка</string>
+    <string name="full_post_answering_message">Отправляем комментарий…</string>
+    <string name="full_post_answered">Комментарий опубликован</string>
+    <string name="full_post_answer_need_name">Введите имя</string>
+    <string name="full_post_answer_need_email">Введите email</string>
+    <string name="full_post_answer_need_correct_email">Проверьте корректность email</string>
+    <string name="full_post_answer_need_text">Введите текст (больше 5 символов)</string>
+    <string name="full_post_answered_error">Ошибка!</string>
+    <string name="full_post_answered_error_action">Попробовать еще раз.</string>
+
+    <string name="sendpost_title">Заголовок</string>
+    <string name="sendpost_text">Содержание</string>
+    <string name="sendpost_send">Отправить</string>
+    <string name="sendpost_sended">Сообщение отправлено!</string>
+    <string name="sendpost_notvalid">Заголовок должен быть больше 3 символов и текст - больше 20 символов!</string>
+    <string name="sendpost_error">Ошибка при отправке!\n</string>
+    <string name="sendpost_progress_title">Отправка…</string>
+    <string name="sendpost_progress_message">Отправка почты</string>
+
+    <string name="title_activity_sendpoll">Анкета</string>
+    <string name="sendpoll_desription_1">Если вам интересно участие в анархистском движении и идеи анархизма, заполните эту форму.</string>
+    <string name="sendpoll_desription_2"><b>Почему так много вопросов?</b></string>
+    <string name="sendpoll_desription_3">Данные вопросы позволяют отсеять троллей, агентов милиции и неадекватных людей от тех, кто на самом деле интересуется анархизмом.
+        \n\nПри этом данные вопросы как правило не имеют однозначно правильного ответа.
+        \n\nМы открыты к самому разному сотрудничеству. Не забывайте указывать почту, желательно, находящуюся подальше от стран СНГ (в идеале - активистскую). Также можно воспользоваться сервисами https://protonmail.com/ и https://www.openmailbox.org/. Если вам нужна экстренная связь - воспользуйтесь нашей почтой: revolutionaruaction@riseup.net</string>
+    <string name="sendpoll_filledit">Это поле обязательно для заполнения</string>
+    <string name="sendpoll_fillcorrectemail">Введите корректный email</string>
+    <string name="sendpoll_fillcorrectage">Введите корректный возраст</string>
+    <string name="sendpoll_filleditsmall">В поле должно быть больше 3 знаков</string>
+    <string name="sendpoll_filleditbig">В поле должно быть больше 10 знаков</string>
+    <string name="sendpoll_fillcheck">Ознакомьтесь с организационными принципами и целями РД перед заполнением анкеты.</string>
+    <string name="sendpoll_email">Ваш Email</string>
+    <string name="sendpoll_name">Ваше имя</string>
+    <string name="sendpoll_age">Ваш возраст</string>
+    <string name="sendpoll_city">Город</string>
+    <string name="sendpoll_work">Место работы</string>
+    <string name="sendpoll_anarchism">Как и при каких обстоятельствах познакомились с анархизмом? Как узнали о Революционном Действии?</string>
+    <string name="sendpoll_motivation">Почему хотите участвовать в деятельности анархического движения?</string>
+    <string name="sendpoll_police">Попадались ли правоохранительным органам, если да, то при каких обстоятельствах, с какими последствиями.</string>
+    <string name="sendpoll_theory">Знакомы ли с анархической теорией, если да, то какие работы? Почитать о них можно в разделе библиотека.</string>
+    <string name="sendpoll_anarchism_opinion">Как бы Вы коротко охарактеризовали анархизм?</string>
+    <string name="sendpoll_needs">Чего сейчас больше всего не хватает в анархистском движении?</string>
+    <string name="sendpoll_participate">Чем бы Вы хотели заниматься прямо сейчас? В чем Вам нужна помощь?</string>
+    <string name="sendpoll_opinion">Что Вы думаете о публикуемом на РД статьях и акциях? Есть ли какие-либо замечания по поводу публикаций?</string>
+    <string name="sendpoll_manifestcheckmark">Ознакомились ли с принципами и целями РД, согласны ли Вы?</string>
+
+    <string name="link_dialog_title">Вставить ссылку</string>
+    <string name="link_dialog_edit_hint">http(s)://</string>
+    <string name="link_dialog_button_ok">OK</string>
+    <string name="link_dialog_button_cancel">Отмена</string>
+
+    <string name="donate_ads">Поддержать (2$)</string>
+    <string name="donate_quest">Выполнить квест</string>
+
+    <string name="interstitial_ad_unit_id">ca-app-pub-8039996100014331/6720454407</string>
+
+    <string name="pref_header_network">Сеть</string>
+    <string name="pref_use_tor_false">Не использовать</string>
+    <string name="pref_use_tor_true">Использовать</string>
+    <string name="pref_use_tor_label">Использовать Orbot</string>
+    <string name="pref_use_tor_message">Orbot будет автоматически запускаться вместе с приложением. Обязательно не забудьте настроить мосты в Orbot!</string>
+    <string name="pref_use_vpn_label">Использовать VPN</string>
+    <string name="pref_use_vpn_summary">VPN вам придеться запускать самостоятельно, приложение будет дожидаться запуска VPN. При использовании Orbot в приложении учитываться не будет.</string>
+    <string name="pref_use_mirror_label">Использовать зеркало</string>
+    <string name="pref_use_mirror_summary">В любой момент может быть заблокировано, если не использовать VPN или Orbot.</string>
+    <string name="pref_use_crashlytics_label">Отправка отчетов</string>
+    <string name="pref_use_crashlytics_summary">Для того, чтобы понимать какие проблемы могут возникать у пользователей приложение использует систему сбора отчетов о сбоях Crashlytics. Если вы отключите эту опцию, вам придется перезагрузить приложение, чтобы оно вступило в силу.</string>
+
+    <string name="pref_open_files">Библиотека</string>
+    <string name="pref_open_internal_label">Открывать книги внутри приложения.</string>
+
+    <string name="pref_data_title">Управление данными</string>
+    <string name="pref_clear_data">Очистить все данные</string>
+    <string name="pref_clear_data_progress_title">Очистка…</string>
+    <string name="pref_clear_data_progress_message">Удаление всей информации в приложении</string>
+    <string name="pref_clear_summary">Базу данных, скаченные книги, картинки</string>
+    <string name="pref_clear_message">Удалить все данные, скаченные приложением. Операция уничтожит все избранные записи, все кэшированные картинки, скаченные книги.</string>
+    <string name="pref_clear_data_ok">ОК</string>
+    <string name="pref_clear_data_cancel">Отмена</string>
+
+    <string name="bandaluki_search_result">Результат поисков: %1$s</string>
+    <string name="bandaluki_search">Поиск</string>
+    <string name="bandaluki_search_nothing">Ничего не найдено</string>
+    <string name="bandaluki_refresh">Обновить</string>
+    <string name="bandaluki_search_hint">ФИО, должность или город</string>
+    <string name="bandaluki_read_more">Узнать больше</string>
+
+    <string name="title_activity_web_view">Встроенный браузер</string>
+    <string name="choose_app">Выберите приложение</string>
+    <string name="file_downloaded">Файл загружается: </string>
+
+    <string name="dialog_ok">Хорошо</string>
+    <string name="dialog_cancel">Нет, спасибо!</string>
+
+    <string name="download_progress_dialog_title">Загрузка…</string>
+    <string name="download_progress_dialog_cancel">Как только загрузка завершиться, мы Вам сообщим!</string>
+    <string name="download_progress_dialog_message">Качаем файл:\n</string>
+    <string name="download_progress_dialog_success">Загрузка завершена</string>
+    <string name="download_progress_dialog_error">Ошибка при загрузке файла</string>
+
+    <string name="download_dialog_title">Загрузка</string>
+    <string name="download_dialog_cancel">Загрузка отменена</string>
+    <string name="download_dialog_message">Вы хотите скачать файл: </string>
+
+    <string name="crashlytics_dialog_title">Сбор информации о сбоях</string>
+    <string name="crashlytics_dialog_message">В нашем приложении есть библиотека Crashlytics, которая помогает разработчикам собирать информацию о сбоях в работе. Вместе с ней также разработчику отправляются метаданные об IP адресе, о модели телефона, номере операционной системы и в каком именно месте произошел сбой. Согласны ли Вы помочь разработчикам в устранении неисправностей, с учетом указанной информации?</string>
+
+    <string name="network_dialog_title">Установите Orbot или Bitmask!</string>
+    <string name="network_dialog_message">Для безопасного использования нашего приложения мы крайне рекомендуем пользоваться Orbot или VPN.\nOrbot - программа, которая подключает Вас к сети Tor на Android.\n\nКроме того она может помочь безопасно пользоваться сетью и посещать заблокированные сайты (советуем установить заодно и программу Orfox).\nЕсли вы хотите использовать VPN, то мы рекомендуем использовать Bitmask - программа, разработанная в том числе анархистами из США, из коллектива Riseup, которая дает возможность обходить блокировки и получать анонимный доступ к сайтам.\n\nХотите ли Вы использовать Orbot или Bitmask при работе нашего приложения? Использование Orbot или VPN всегда можно будет изменить в настройках.\n\nПомните также, что при выборе работы через зеркало оно может быть рано или поздно заблокировано. Поэтому мы рекомендуем использовать непрямой доступ к заблокированным ресурсам.</string>
+    <string name="network_dialog_radio_orbot">Скачать и использовать Orbot. </string>
+    <string name="network_dialog_radio_bitmask">Скачать и использовать VPN.</string>
+    <string name="network_dialog_radio_installed_bitmask">Использовать VPN.</string>
+    <string name="network_installed_dialog_radio_ok">Использовать Orbot.</string>
+    <string name="network_dialog_radio_cancel">Использовать зеркало.</string>
+    <string name="network_dialog_ok">ВЫБРАТЬ</string>
+
+    <string name="book_no_external_app">Не удалось открыть книгу через другое приложение.</string>
+
+    <string name="book_dialog_title">Окрыть книгу</string>
+    <string name="book_dialog_message">В нашем приложении предусмотрен просмотр PDF файлов.\nНо мы нашли у вас другое приложение, которое также может открывать этот формат.\nХотите ли вы открыть в стороннем приложении или использовать встроенное?</string>
+    <string name="book_dialog_radio_ok">Открыть в стороннем</string>
+    <string name="book_dialog_radio_cancel">Использовать встроенное</string>
+    <string name="book_dialog_save_option">Сохранить настройки</string>
+    <string name="book_dialog_ok">ОТКРЫТЬ</string>
+
+    <string name="has_nothing_to_show">Тут пока ничего нет</string>
+
+    <string name="donate_organiztion_1">Вы можете поддержать нашу организацию.
+        \n\nДля этого есть несколько способов, описанных ниже:
+        \n\n1. Первый, самый простой способ, это оплатить через Google Play, вызвать которую можно по кнопке ниже.</string>
+    <string name="donate_organiztion_2">2. Можно помочь переводом на карту Mastercard в долларах или евро.
+        \n\nЕвро: <b><u>5289 4471 1413 8484</u></b> / истекает 04/18
+        \n\nДоллар: <b><u>5289 4471 1894 7153</u></b> / истекает 04/18
+        \n\nТелефон Qiwi кошелька:
+        \n\n<b><u>+380635940316</u></b>
+        \n\nДля переводов в системе Qiwi настоятельно просим пользоваться терминалами самообслуживания. Найти их можно на сайте qiwi.com
+        \n\nВиртуальная банковская карта qiwi:
+        \n\n<b><u>4890 4945 0505 2241</u></b> / истекает 03.19
+        \n\nТакже рекомендуется переводить деньги не от своего имени и не со своих личных карточек. Помните, любой такой перевод может отслеживаться белорусским МВД!
+        \n\n<b><u>1HfgH2a44qqNpto2JqDS8Ej26PN1FLiPXy</u></b>
+        \n\nПереводы через Bitcoin не распостранены в Беларуси, однако являются самым безопасным способом денежного перевода. Отследить такие переводы практически невозможно.
+        \n\n
+    </string>
+
+    <string name="button_outline">Оглавление</string>
+    <string name="button_layout">Документ</string>
+    <string name="dlog_password_title">Пароль:</string>
+    <string name="dlog_password_message">Этот документ зашифрован</string>
+    <string name="dlog_password_retry">Неправильный пароль</string>
+    <string name="library_no_external_storage">Нет внешнего хранилища</string>
+    <string name="library_not_a_directory">Не папка</string>
+    <string name="library_permission_denied">Доступ запрещен</string>
+</resources>

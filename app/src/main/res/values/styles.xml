@@ -1,0 +1,84 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">20sp</item>
+        <item name="fontPath">fonts/Furore.ttf</item>
+    </style>
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.Small</item>
+        <item name="fontPath">fonts/Furore.ttf</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle.Medium">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">12sp</item>
+        <!--<item name="fontPath">fonts/Furore.ttf</item>-->
+    </style>
+
+    <style name="DialogText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <!--<item name="fontPath">fonts/Furore.ttf</item>-->
+    </style>
+
+    <style name="LibraryProgress" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorAccent">#447a29</item>
+        <item name="colorPrimary">#447a29</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="PreferencesTheme" parent="Base.Theme.AppCompat">
+
+    </style>
+
+    <style name="DialogTheme" parent="Base.V7.Theme.AppCompat.Dialog">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--<style name="BreadcrumbTheme" parent="android:Widget.Spinner">-->
+        <!--<item name="android:background">@drawable/breadcrumb_arrow</item>-->
+    <!--</style>-->
+
+</resources>

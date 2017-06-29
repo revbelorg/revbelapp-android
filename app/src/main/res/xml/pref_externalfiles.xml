@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="OPEN_INTERNAL_PDF"
+        android:title="@string/pref_open_internal_label" />
+
+</PreferenceScreen>

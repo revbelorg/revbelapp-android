@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+
+	<com.news.revbel.pdfview.PageView android:id="@+id/page_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:keepScreenOn="true"
+			/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/controls"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:id="@+id/navigation_bar"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_alignParentBottom="true"
+			android:background="#000000"
+			android:orientation="horizontal">
+
+			<SeekBar
+				android:id="@+id/page_seekbar"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				android:max="0" />
+
+			<TextView
+				android:id="@+id/page_label"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:ellipsize="end"
+				android:gravity="right"
+				android:maxLines="1"
+				android:padding="8dp"
+				android:text="- / -"
+				android:textColor="#FFFFFF"
+				android:textSize="16sp" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/action_bar"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_alignParentTop="true"
+			android:background="#000000"
+			android:orientation="horizontal"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/title_label"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="12dp"
+				android:layout_weight="1"
+				android:ellipsize="end"
+                android:textColor="#FFFFFF"
+				android:textSize="16sp"
+                android:maxLines="1" />
+
+			<Button
+				android:id="@+id/layout_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="@string/button_layout"
+				android:visibility="gone" />
+
+			<Button
+				android:id="@+id/outline_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="@string/button_outline"
+				android:visibility="gone" />
+		</LinearLayout>
+
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/close_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:clickable="true"
+			app:backgroundTint="@android:color/black"
+			app:fabSize="mini"
+			app:rippleColor="@color/red"
+			app:srcCompat="@drawable/action_close" />
+
+	</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

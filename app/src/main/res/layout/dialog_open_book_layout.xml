@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/book_dialog_title"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        fontPath="fonts/Furore.ttf"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/book_dialog_message"
+        android:textAppearance="@style/DialogText" />
+
+    <RadioGroup
+        android:id="@+id/radio_tor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:checkedButton="@+id/radio_use_external"
+        android:paddingTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_use_external"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/book_dialog_radio_ok"
+            android:textSize="18sp"
+            app:buttonTint="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_use_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/book_dialog_radio_cancel"
+            android:textSize="18sp"
+            app:buttonTint="@android:color/black"
+            tools:text="@string/book_dialog_radio_cancel" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/save_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/book_dialog_save_option"
+        app:buttonTint="@android:color/black" />
+</LinearLayout>

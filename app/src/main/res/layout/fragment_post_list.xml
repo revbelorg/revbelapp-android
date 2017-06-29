@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="postListViewModel"
+            type="com.news.revbel.viewmodel.CategoryPostListViewModel" />
+
+        <variable
+            name="listeners"
+            type="com.news.revbel.postlist.PostListListeners" />
+
+        <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers" />
+        <import type="me.tatarka.bindingcollectionadapter2.ItemBinding" />
+        <import type="android.view.View" />
+        <import type="com.news.revbel.viewmodel.CategoryPostListViewModel"/>
+        <import type="com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout" />
+    </data>
+    <RelativeLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_posts_container"
+        android:background="@color/recycleBackground">
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srl_direction="both"
+            app:stopSwipeRefresh='@{postListViewModel.isDownloading}'>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_list"
+                android:name="com.news.revbel.postlist.PostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="26dp"
+                android:clipToPadding="false"
+                android:background="@color/recycleBackground"
+                app:adapter='@{postListViewModel.adapter}'
+                app:itemBinding='@{postListViewModel.singleItemView}'
+                app:items="@{postListViewModel.items}"
+                app:layoutManager="@{LayoutManagers.linear()}"
+                tools:context="com.news.revbel.postlist.PostListFragment"
+                tools:listitem="@layout/cell_post" />
+
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:paddingLeft="-5dp"
+            android:paddingRight="-5dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:fitsSystemWindows="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerLayout"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/menu_padding"
+                    android:paddingRight="@dimen/menu_padding">
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</layout>
+
+

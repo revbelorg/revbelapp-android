@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.news.revbel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".RevApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_icon_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true"
+                android:label="@string/browse_intent_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="revbel.org" />
+                <data android:scheme="https"
+                    android:host="revbel.org" />
+                <data android:scheme="http"
+                    android:host="revbel.net" />
+                <data android:scheme="https"
+                    android:host="revbel.net" />
+                <data android:scheme="http"
+                    android:host="revbel.cc" />
+                <data android:scheme="https"
+                    android:host="revbel.cc" />
+                <data android:scheme="http"
+                    android:host="bandaluki.info" />
+                <data android:scheme="https"
+                    android:host="bandaluki.info" />
+                <data android:scheme="revbel" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".feedback.PostPollActivity"
+            android:label="@string/title_activity_sendpoll"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".pdfview.DocumentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_pdfview"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".pdfview.OutlineActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_pdfview"/>
+        <activity
+            android:name=".preferences.SettingsActivity"
+            android:label="@string/nav_title_settings"
+            android:theme="@style/PreferencesTheme" />
+
+        <meta-data
+            android:name="com.news.revbel.network.TorifiedGlideModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.bumptech.glide.integration.рokhttp3.OkHttpGlideModule"
+            tools:node="remove" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="29b8281646a00492141c7c8aec5dcc0b1fa1e9f8" />
+    </application>
+
+</manifest>
